@@ -12,7 +12,7 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 bot = commands.Bot(command_prefix='!')
 
 
-@bot.command(name='plist', help='list all user connected toa  voice channel)
+@bot.command(name='plist', help='list all user connected to a  voice channel)
 async def pslist(ctx):
     teste = ctx.message.author.voice
     if(ctx.message.author.voice == None):
