@@ -20,9 +20,9 @@ async def pslist(ctx):
     else:
         channel = ctx.message.author.voice.channel
         members = channel.members
-        mensagem = 'Lista de usuários(Canal de voz '+ str(channel) +'): \n'
+        message = 'Users (voice channel '+ str(channel) +'): \n'
         for member in members:
-            mensagem = mensagem + member.name + '\n'
-        await ctx.send(mensagem)
+            message = message + member.name + '\n'
+        await ctx.send(message)
 
 bot.run(TOKEN)
